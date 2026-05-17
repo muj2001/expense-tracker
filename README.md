@@ -1,18 +1,31 @@
-# Installation
-
-```
+# Runing The Project
+## Installation
+```bash
 npm i
 ```
 
-# Phase 1
-## Progress
+## Start Server
+```bash
+cd frontend
+npx expo start
+
+# OR
+
+npm run start -w frontend
+```
+
+
+# Development
+## Phase 1
+### Progress
 - Setup React Native project through Expo
 - Setup ESLint in the project
 - Setup `drizzle-orm`, `drizzle-kit`, and `expo-sqlite`
 - Setup `drizzle.config.json`
 - Added migrations for phase 1: `0000_create_categories_and_transactions.sql`.
+- Using dummy data to start developing home screen.
 
-## Todos
+### Todos
 - [] `PRAGMA foreign_keys = ON;` on every DB connection init.
 - [] CRUD operations
 - [] Basic transactions screen showing list of all transactions with a aggregated total
